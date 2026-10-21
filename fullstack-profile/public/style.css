@@ -1,0 +1,371 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f2ef;
+    color: #1d2226;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    height: 60px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 10%;
+
+    gap: 15px;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+
+    background: #0a66c2;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 27px;
+    font-weight: bold;
+
+    border-radius: 4px;
+}
+
+.search {
+    width: 300px;
+    height: 40px;
+
+    border: none;
+    background: #eef3f8;
+
+    border-radius: 20px;
+
+    padding: 0 18px;
+
+    font-size: 15px;
+}
+
+.nav-links {
+    margin-left: auto;
+
+    display: flex;
+    gap: 22px;
+}
+
+.nav-links span {
+    text-align: center;
+    color: #555;
+    font-size: 20px;
+}
+
+.nav-links small {
+    display: block;
+    font-size: 10px;
+}
+
+
+/* MAIN */
+
+.container {
+    width: 1150px;
+
+    margin: 25px auto;
+
+    display: grid;
+
+    grid-template-columns: 820px 310px;
+
+    gap: 20px;
+}
+
+
+/* CARD */
+
+.card,
+.profile-card {
+    background: white;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+
+    margin-bottom: 12px;
+
+    overflow: hidden;
+}
+
+
+/* COVER */
+
+.cover {
+    height: 220px;
+
+    background: linear-gradient(
+        90deg,
+        #9fb4b7 0%,
+        #9fb4b7 60%,
+        #dce7e9 60%,
+        #dce7e9 68%,
+        #bfd4d7 68%
+    );
+
+    position: relative;
+}
+
+.camera {
+    position: absolute;
+
+    right: 20px;
+    top: 20px;
+
+    width: 40px;
+    height: 40px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: white;
+}
+
+
+/* PROFILE */
+
+.profile-content {
+    position: relative;
+
+    padding: 0 28px 25px;
+}
+
+.avatar {
+    position: absolute;
+
+    top: -105px;
+    left: 28px;
+
+    width: 170px;
+    height: 170px;
+
+    border-radius: 50%;
+
+    background: #98786d;
+    color: white;
+
+    border: 5px solid white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 70px;
+}
+
+.profile-info {
+    padding-top: 100px;
+}
+
+.profile-info h1 {
+    font-size: 28px;
+}
+
+.profile-info small {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.verified {
+    color: #0a66c2;
+}
+
+.title {
+    margin-top: 8px;
+    font-size: 17px;
+}
+
+.location {
+    margin-top: 8px;
+    color: #666;
+}
+
+a {
+    color: #0a66c2;
+    text-decoration: none;
+}
+
+.connections {
+    margin-top: 8px;
+    color: #0a66c2;
+    font-weight: bold;
+}
+
+
+/* BUTTONS */
+
+.buttons {
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 25px;
+}
+
+.buttons button {
+    padding: 9px 17px;
+
+    border-radius: 20px;
+
+    border: 1px solid #0a66c2;
+
+    background: white;
+
+    color: #0a66c2;
+
+    font-weight: bold;
+}
+
+.buttons .primary {
+    background: #0a66c2;
+    color: white;
+}
+
+
+/* OPEN TO WORK */
+
+.open-work {
+    margin-top: 25px;
+
+    background: #dce8f4;
+
+    padding: 15px;
+
+    border-radius: 8px;
+}
+
+.open-work p {
+    margin: 6px 0;
+}
+
+
+/* NORMAL CARDS */
+
+.card {
+    padding: 25px;
+}
+
+.card h2 {
+    margin-bottom: 15px;
+}
+
+
+/* SKILLS */
+
+.skills span {
+    display: inline-block;
+
+    padding: 8px 15px;
+
+    border: 1px solid #aaa;
+
+    border-radius: 20px;
+
+    margin: 5px;
+}
+
+
+/* RIGHT SIDE */
+
+.right .card {
+    padding: 22px;
+}
+
+.right hr {
+    border: none;
+
+    border-top: 1px solid #ddd;
+
+    margin: 20px 0;
+}
+
+.viewer {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+.viewer button {
+    margin-left: auto;
+
+    padding: 6px 13px;
+
+    border: 1px solid #555;
+
+    background: white;
+
+    border-radius: 18px;
+}
+
+.person {
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+
+    background: #999;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* MOBILE */
+
+@media(max-width:1000px) {
+
+    .container {
+        width: 95%;
+
+        grid-template-columns: 1fr;
+    }
+
+    .right {
+        display: none;
+    }
+
+    .navbar {
+        padding: 0 15px;
+    }
+
+}
+
+@media(max-width:600px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .search {
+        width: 200px;
+    }
+
+    .buttons {
+        flex-wrap: wrap;
+    }
+
+}

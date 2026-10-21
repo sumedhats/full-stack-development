@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title><%= profile.name %></title>
+
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">in</div>
+
+        <input
+            type="text"
+            class="search"
+            placeholder="Search"
+        >
+
+        <div class="nav-links">
+
+            <span>⌂<small>Home</small></span>
+
+            <span>♟<small>My Network</small></span>
+
+            <span>▣<small>Jobs</small></span>
+
+            <span>✉<small>Messaging</small></span>
+
+            <span>🔔<small>Notifications</small></span>
+
+            <span>👤<small>Me</small></span>
+
+        </div>
+
+    </nav>
+
+
+    <main class="container">
+
+        <section class="left">
+
+            <div class="profile-card">
+
+                <div class="cover">
+
+                    <button class="camera">📷</button>
+
+                </div>
+
+
+                <div class="profile-content">
+
+                    <div class="avatar">
+                        S
+                    </div>
+
+
+                    <div class="profile-info">
+
+                        <h1>
+
+                            <%= profile.name %>
+
+                            <span class="verified">✓</span>
+
+                            <small>
+                                <%= profile.pronouns %>
+                            </small>
+
+                        </h1>
+
+
+                        <p class="title">
+                            <%= profile.title %>
+                        </p>
+
+
+                        <p class="location">
+
+                            <%= profile.location %>
+
+                            ·
+
+                            <a href="#">
+                                Contact info
+                            </a>
+
+                        </p>
+
+
+                        <p class="connections">
+
+                            <%= profile.connections %>
+                            connections
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="buttons">
+
+                        <button class="primary">
+                            Open to
+                        </button>
+
+                        <button>
+                            Add section
+                        </button>
+
+                        <button>
+                            Enhance profile
+                        </button>
+
+                        <button>
+                            Resources
+                        </button>
+
+                    </div>
+
+
+                    <div class="open-work">
+
+                        <b>
+                            Open to work · Recruiters only
+                        </b>
+
+                        <p>
+                            Bengaluru
+                        </p>
+
+                        <a href="#">
+                            Show details
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="card">
+
+                <h2>About</h2>
+
+                <p>
+                    Computer Applications student interested
+                    in web development, cloud technologies,
+                    databases and full-stack development.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h2>Skills</h2>
+
+                <div class="skills">
+
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>React</span>
+                    <span>Node.js</span>
+                    <span>Express.js</span>
+                    <span>EJS</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <aside class="right">
+
+            <div class="card">
+
+                <h2>Profile language</h2>
+
+                <p>English</p>
+
+                <hr>
+
+                <h2>Public profile & URL</h2>
+
+                <p>
+                    www.linkedin.com/in/profile
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h2>
+                    Who your viewers also viewed
+                </h2>
+
+                <div class="viewer">
+
+                    <div class="person">A</div>
+
+                    <b>Someone at RV University</b>
+
+                    <button>View</button>
+
+                </div>
+
+                <hr>
+
+                <div class="viewer">
+
+                    <div class="person">B</div>
+
+                    <b>Someone at Infosys</b>
+
+                    <button>View</button>
+
+                </div>
+
+                <hr>
+
+                <div class="viewer">
+
+                    <div class="person">C</div>
+
+                    <b>Someone at Fusion VR</b>
+
+                    <button>View</button>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+    </main>
+
+
+    <script src="/script.js"></script>
+
+</body>
+
+</html>
